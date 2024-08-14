@@ -10,7 +10,7 @@
 		Caption="DemoLogiV24"
 	/>
 	<Path
-		AppPath="http://localhost:8080/DemoLogiV24Local"
+		AppPath="http://localhost:8080/DemoLogiV24"
 	/>
 	<General
 		RepoFriendly="True"
