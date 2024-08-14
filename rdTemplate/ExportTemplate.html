@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <rdHeadPlaceholder/>
+    <script type="text/javascript">
+        var hcExportOptions = {
+            "type": "image/png",
+            "libURL": "https://code.highcharts.com/5.0.6/lib/",
+            "filename": "chart",
+            "scale": 1,
+            "fallbackToExportServer": false
+        }
+        function prepareChartSettings(chartsettings) {
+            chartsettings.chart.renderTo = document.getElementById('chartContainer');
+            return chartsettings;
+        }
+        function createChart(chartsettings) {
+            LogiXML.HighchartsFormatters.setFormatters(chartsettings);
+            LogiXML.ChartCanvas.Highcharts9Adapter.BeforeChartCreate(chartsettings);
+            chartsettings.chart.animation = false;
+            Highcharts.setOptions({
+                plotOptions: {
+                    series: {
+                        animation: false
+                    }
+                }
+            })
+            chart = new Highcharts.chart(chartsettings);
+            LogiXML.ChartCanvas.Highcharts9Adapter.AfterChartCreate(chart);
+            return chart;
+        }
+        function renderChartByChartSettings(chartsettings) {
+            chartsettings = prepareChartSettings(chartsettings);
+            createChart(chartsettings);
+        }
+        function renderChartByChartSettings_HC(chartsettings) {
+            chartsettings = prepareChartSettings(chartsettings);
+            var chart = createChart(chartsettings);
+            Highcharts.Chart.prototype.exportChartLocal.call(chart, hcExportOptions);
+        }
+    </script>
+</head>
+<body>
+    <div id="chartContainer"/>
+</body>
+</html>

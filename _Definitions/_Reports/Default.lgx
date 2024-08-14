@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report
+	ID="Default"
+	>
+	<Body>
+		<Button
+			Caption="exportPDF"
+			ID="btnexport"
+			>
+			<Action
+				ID="export"
+				Type="PDF"
+				>
+				<Target
+					ExportDataTableID="dt_test"
+					Report="Default"
+					Type="PDF"
+				/>
+			</Action>
+		</Button>
+		<DataTable
+			ID="dt_test"
+			>
+			<DataLayer
+				Type="Static"
+				>
+				<StaticDataRow
+					Column1="value 1 c1"
+					Column2="value 1 c2"
+					Column3="value 1 c3"
+				/>
+				<StaticDataRow
+					Column1="value 2 c1"
+					Column2="value 2 c2"
+					Column3="value 2 c3"
+				/>
+				<StaticDataRow
+					Column1="value 3 c1"
+					Column2="value 3 c2"
+					Column3="value 3 c3"
+				/>
+			</DataLayer>
+			<AutoColumns/>
+		</DataTable>
+	</Body>
+</Report>

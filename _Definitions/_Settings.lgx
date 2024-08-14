@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Setting
+	ID="_settings"
+	>
+	<GlobalCSS
+		ID="themeSignal"
+		Theme="Signal"
+	/>
+	<Application
+		Caption="DemoLogiV24"
+	/>
+	<Path
+		AppPath="http://localhost:8080/DemoLogiV24Local"
+	/>
+	<General
+		RepoFriendly="True"
+		ScriptingLanguage="JavaScript"
+		>
+		<WaitPage/>
+	</General>
+	<Connections/>
+	<TeamDevelopment/>
+</Setting>
