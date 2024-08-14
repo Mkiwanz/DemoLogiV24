@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rdData>
+  <dt_test Column1="value 1 c1" Column2="value 1 c2" Column3="value 1 c3" />
+  <dt_test Column1="value 2 c1" Column2="value 2 c2" Column3="value 2 c3" />
+  <dt_test Column1="value 3 c1" Column2="value 3 c2" Column3="value 3 c3" />
+</rdData>
