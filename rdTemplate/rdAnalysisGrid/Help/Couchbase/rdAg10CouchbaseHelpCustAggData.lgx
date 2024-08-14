@@ -1,0 +1,8 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="AVG" Description="Returns the average value of a column." Syntax="AVG ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="COUNT" Description="Returns the number of items found in a group." Syntax="COUNT ( [ DISTINCT ] * | expression )" Notes="The COUNT function has three variations. COUNT ( * ) counts all the rows whether they include nulls or not. COUNT ( expression ) computes the number of rows with non-NULL values in expression. COUNT ( DISTINCT expression ) computes the number of distinct non-NULL values in expression." />
+  <StaticDataRow Name="MAX" Description="Returns the maximum value of a column." Syntax="MAX ( expression )" Notes="" />
+  <StaticDataRow Name="MIN" Description="Returns the minimum value of a column." Syntax="MIN ( expression )" Notes="" />
+  <StaticDataRow Name="STDDEV" Description="Returns the population standard deviation of a set of numeric values." Syntax="STDDEV( expression )" Notes="" />
+  <StaticDataRow Name="SUM" Description="Returns the sum of all non-null values in an expression." Syntax="SUM ( [ DISTINCT ] expression )" Notes="" />
+  </DataLayer>

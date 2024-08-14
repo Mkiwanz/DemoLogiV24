@@ -1,0 +1,41 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="Date" Description="Returns the current date." Syntax="CURRENT_DATE()" Notes=""/>
+  <StaticDataRow Name="DateAdd" Description="Adds or subtracts some interval of time from a date or time." Syntax="TIMESTAMPADD(interval, integer, timestamp)" Notes="Interval may be:
+SQL_TSI_SECOND, SQL_TSI_MINUTE, SQL_TSI_HOUR, SQL_TSI_DAY, SQL_TSI_WEEK, SQL_TSI_MONTH, SQL_TSI_QUARTER, SQL_TSI_YEAR. 
+A simple example would be TIMESTAMPADD(SQL_TSI_DAY, 1, timestamp). "/>
+  <StaticDataRow Name="DateDiff" Description="Computes the difference between two timestamps." Syntax="TIMESTAMPDIFF(interval, timestamp1, timestamp2)" Notes=""/>
+  <StaticDataRow Name="DatePart" Description="Returns part of a timestamp." Syntax="EXTRACT(part FROM timestamp)" Notes="Part may be: YEAR, MONTH, DAY, HOUR, MINUTE, or SECOND.
+A simple example would be EXTRACT(YEAR FROM timestamp)."/>
+  <StaticDataRow Name="Day" Description="Returns the day of the month.  Possible return values are from 1-31." Syntax="EXTRACT(DAY FROM timestamp)" Notes=""/>
+  <StaticDataRow Name="Hour" Description="Returns the hour of the day.  Possible return values are 0-23." Syntax="EXTRACT(HOUR FROM timestamp)" Notes=""/>
+  <StaticDataRow Name="Case" Description="Returns one value or another, depending on if the expression evaluates to True or False." Syntax="Case When Expression Then True Else False End" Notes="Expression is a formula that returns True or False.  
+For example, this would return &quot;Blue&quot;, because 1 does not equal 2.  
+Case When 1=2 Then &quot;Red&quot; Else &quot;Blue&quot; End"/>
+  <StaticDataRow Name="Int" Description="Returns the integer portion of a number, removing any decimal places." Syntax="Round(Floatvalue,0)" Notes=""/>
+  <StaticDataRow Name="Lower" Description="Converts all characters to lower case." Syntax="Lower(text)" Notes=""/>
+  <StaticDataRow Name="Left" Description="Returns the &quot;length&quot; number of characters from the left side of the input text." Syntax="Left(text,length)" Notes=""/>
+  <StaticDataRow Name="Length" Description="Returns the number of characters in the text." Syntax="Length(text)" Notes=""/>
+  <StaticDataRow Name="LTrim" Description="Removes the space characters from the left side of the text." Syntax="LTrim(text)" Notes=""/>
+  <StaticDataRow Name="Mid" Description="Returns characters from the middle of the text." Syntax="Substring(text,start,length)" Notes="&quot;start&quot; is the first character to be returned.  The first character is at position 1.
+
+&quot;length&quot; is the number of characters to be returned."/>
+  <StaticDataRow Name="Minute" Description="Returns the minute of the hour.  Possible return values are 0-59." Syntax="EXTRACT(MINUTE FROM timestamp)" Notes=""/>
+  <StaticDataRow Name="Month" Description="Returns the month of the year.  Possible return values are 1-12." Syntax="EXTRACT(MONTH FROM timestamp)" Notes=""/>
+  <StaticDataRow Name="MonthName" Description="Returns the name of the month." Syntax="MonthName(date)" Notes=""/>
+  <StaticDataRow Name="Now" Description="Returns the current date and time." Syntax="Now()" Notes=""/>
+  <StaticDataRow Name="Power" Description="Exponentiation: Power( m, n ). Function returns m raised to the nth power." Syntax="Power(m,n)" Notes=""/>
+  <StaticDataRow Name="Right" Description="Returns the &quot;length&quot; number of characters from the right side of the input text." Syntax="RIGHT(text,length)" Notes=""/>
+  <StaticDataRow Name="Rand" Description="Returns a random number between 0 and 1." Syntax="Rand([seed])" Notes="Seed is an integer expression (tinyint, smallint, or int) that gives the seed value. This parameter is Optional."/>
+  <StaticDataRow Name="Round" Description="Returns a number rounded to a specified number of decimal places." Syntax="Round(numeric_expression, length)" Notes=""/>
+  <StaticDataRow Name="RTrim" Description="Removes any space characters from the right side of the text." Syntax="RTrim(text)" Notes=""/>
+  <StaticDataRow Name="Second" Description="Returns the second of the minute.  Possible values are 0-59." Syntax="EXTRACT(SECOND FROM timestamp)" Notes=""/>
+  <StaticDataRow Name="Sign" Description="Returns -1 if the number is negative.  Returns 1 if the number is positive.  Returns 0 if the number is 0." Syntax="Sign(number)" Notes=""/>
+  <StaticDataRow Name="Space" Description="Returns text consisting of the number of spaces." Syntax="Space(number)" Notes=""/>
+  <StaticDataRow Name="Square" Description="Returns the square root of a number." Syntax="Power(number,2)" Notes=""/>
+  <StaticDataRow Name="String" Description="Returns text consisting of the character duplicated the number of times." Syntax="Repeat(text, count)" Notes=""/>
+  <StaticDataRow Name="Trim" Description="Removes space characters from both the left and rights sides of the text." Syntax="RTrim(LTrim(text))" Notes=""/>
+  <StaticDataRow Name="Upper" Description="Converts all characters to upper case." Syntax="Upper(text)" Notes=""/>
+  <StaticDataRow Name="Weekday" Description="Returns the number of the day of the week.  Possible return values are 1-7." Syntax="DAYOFWEEK(timestamp)" Notes="1 = Sunday"/>
+  <StaticDataRow Name="WeekdayName" Description="Returns the name of the day corresponding to the weekday number." Syntax="DAYNAME(timestamp)" Notes=""/>
+  <StaticDataRow Name="Year" Description="Returns the number of the year of the specified date." Syntax="EXTRACT(YEAR FROM timestamp)" Notes=""/>
+</DataLayer>
