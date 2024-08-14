@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ChartCanvas.rdChartCanvasErrorTemplate">
+  <Division ID="rdCcError_rdCcID" ShowModes="None">
+    <Division ID="rdErrorInfoLoc"/>
+    <LineBreak />
+    <Division ID="divShowHide" IdeDisplayStatus="Collapsed">
+      <Action ElementID="divHideDetail_rdCcID,divShowDetail_rdCcID,rdCcErrDetailContainer_rdCcID" ID="actShowHide" Type="ShowElement" />
+      <Division ID="divShowDetail_rdCcID" ShowModes="All">
+        <Button ID="btShow" Caption="Show Details" />
+      </Division>
+      <Division ID="divHideDetail_rdCcID" ShowModes="None">
+        <Button Caption="Hide Details" ID="btHide" />
+      </Division>
+    </Division>
+    <LineBreak />
+    <Division ID="rdCcErrDetailContainer_rdCcID" ShowModes="None" HtmlDiv="True">
+      <Label Caption="There was a problem creating this chart.&#xD;&#xA;Click here to view the details." ID="rdCcErrDetail" Class="rdCcErrDetail" />
+    </Division>
+    <Division ShowModes="None">
+      <Label Caption="" ID="rdCodeErrMessage_rdCcID"/>
+    </Division>
+    <Division Class="ThemeHidden">
+      <Division ID="rdServerErrInfo">
+        <Label Caption="Server Side Error" ID="rdTitle" Class="rdCcErrTitle"/>
+        <LineBreak />
+        <Label Caption="There was a problem creating this chart. Please refer to the detail log file." ID="rdDescription" Class="rdCcErrDescription"/>        
+      </Division>
+      <Division ID="rdParseJsonErrInfo">
+        <Label Caption="JSON Parse Failed" ID="rdTitle" Class="rdCcErrTitle"/>
+        <LineBreak />
+        <Label Caption="There was a problem parsing JSON. Please copy exception and report it to system administrator." ID="rdDescription" Class="rdCcErrDescription"/>
+      </Division>
+      <Division ID="rdResponseErrInfo">
+        <Label Caption="Server Response Error" ID="rdTitle" Class="rdCcErrTitle"/>
+        <LineBreak />
+        <Label Caption="There was a problem connecting to the Server.The Server could be temporarily unavailable or too busy.&#xD;&#xA;Try again in a few moments. If you are unable to load any pages, check your computer's network connections.&#xD;&#xA;If your computer or network is protected by a firewall or proxy, make sure that browser is permitted to access the web." ID="rdDescription" Class="rdCcErrDescription"/>
+      </Division>
+      <Division ID="rdHighChartsErrInfo">
+        <Label Caption="HighCharts Error" ID="rdTitle" Class="rdCcErrTitle"/>
+        <LineBreak />
+        <Label Caption="There was a problem in HighCharts. Please copy exception and report it to system administrator." ID="rdDescription" Class="rdCcErrDescription"/>
+      </Division>
+   </Division>
+  </Division>
+</Report>

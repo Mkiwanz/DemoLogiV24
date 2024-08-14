@@ -1,0 +1,9 @@
+﻿.rdThemeDataTableCell.rdThemeDataTableCellHidden {
+    vertical-align: top;
+    padding: 0px;
+    overflow: visible;
+}
+
+.rdThemeDataTableCellHidden > div * {
+    display: none;
+}

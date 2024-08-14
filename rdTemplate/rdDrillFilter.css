@@ -1,0 +1,57 @@
+﻿/*-------- REPDEV-24519 Develop a new breadcrumb menu for SSRM Dashboard Drill To ------*/
+.rdDrillFilterRow {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.rdDrillFilterClearButton {
+    font-size: 150%;
+    color: #363B42;
+    font-weight: bold;
+    padding: 0 3px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.rdDrillFilterCaption {
+    font-size: 100%;
+    opacity: .7;
+    padding: 0px;
+}
+
+.rdDrillFilterContent {
+}
+
+.rdDrillFilterContent ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.rdDrillFilterContent ul li {
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.rdDrillFilterContent ul li.rdChartDrillMenuTip a {
+    cursor: pointer;
+    color: #25e5ef;
+}
+
+.rdDrillFilterContent ul li a {
+    padding: 2px 5px;
+}
+
+.rdDrillFilterContent ul li a.active {
+    cursor: pointer;
+    color: #25e5ef;
+}
+
+.rdDrillFilterMenu li a {
+    cursor: pointer;
+}
+
+.rdDrillFilterMenu li.yuimenuitem-disabled label {
+    font-weight: bold;
+    color: #b9b9b9 !important;
+}

@@ -1,0 +1,19 @@
+﻿<ExportExcelTemplate>
+  <Action ElementID="popExcelPasswordPrompt" ID="actExcelPasswordPrompt" Type="ShowElement"/>
+  <PopupPanel ID="popExcelPasswordPrompt" Draggable="True" PopupModal="True" Caption="Excel Options">
+    <InputPassword ID="InpOpenPassword" Caption="Password to open:" AllowInputVisible="True" Class="ThemeExcelPassword">
+    </InputPassword>
+    <LineBreak/>
+    <Button ID="rdExcelPasswordOK" Caption="OK">
+      <Action Type="RefreshElement" ElementID="popExcelPasswordPrompt" ID="actExcelPassword" RequestForwarding="True" PostRefreshJavascript="rdExcelPasswordPopup_AfterRefresh('--afterOkRefreshActionID--');">
+        <LinkParams 
+                    rdExcelPasswordProtection="True"
+						/>
+      </Action>
+    </Button>
+    <Label ID="--afterOkRefreshActionID--">
+      <Action></Action>
+    </Label>
+  </PopupPanel>
+</ExportExcelTemplate>
+
