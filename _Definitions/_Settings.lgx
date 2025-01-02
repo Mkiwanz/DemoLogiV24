@@ -18,6 +18,22 @@
 		>
 		<WaitPage/>
 	</General>
-	<Connections/>
+	<Connections>
+		<Connection
+			ID="pg-server"
+			PostgreSQLDatabase="mydb"
+			PostgreSQLPassword="mypassword"
+			PostgreSQLServer="ec2-52-90-203-227.compute-1.amazonaws.com"
+			PostgreSQLUser="myuser"
+			Type="PostgreSQL"
+		/>
+	</Connections>
 	<TeamDevelopment/>
+	<FileToDatabaseMapping
+		ConnectionID="pg-server"
+		Folder="@Function.AppPhysicalPath~/SavedDashboards"
+		ID="mapping"
+		TableName="logi_saved_dashboards"
+	/>
+	<ideTestParams/>
 </Setting>
