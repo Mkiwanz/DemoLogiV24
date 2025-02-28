@@ -13,6 +13,7 @@
 		AppPath="http://localhost:8080/DemoLogiV24"
 	/>
 	<General
+		rdDebuggerStyle="DebuggerLinks"
 		RepoFriendly="True"
 		ScriptingLanguage="JavaScript"
 		>
@@ -29,11 +30,16 @@
 		/>
 	</Connections>
 	<TeamDevelopment/>
-	<FileToDatabaseMapping
-		ConnectionID="pg-server"
-		Folder="@Function.AppPhysicalPath~/SavedDashboards"
-		ID="mapping"
-		TableName="logi_saved_dashboards"
+	<Remark>
+		<FileToDatabaseMapping
+			ConnectionID="pg-server"
+			Folder="@Function.AppPhysicalPath~/SavedDashboards"
+			ID="mapping"
+			TableName="logi_saved_dashboards"
+		/>
+	</Remark>
+	<StartupProcess
+		Process="startup"
+		TaskID="startup"
 	/>
-	<ideTestParams/>
 </Setting>

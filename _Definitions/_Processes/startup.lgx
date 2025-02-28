@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Process
+	ID="startup"
+	>
+	<Task
+		ID="startup"
+		>
+		<Procedure
+			ID="setSession"
+			Type="SetSessionVars"
+			>
+			<SessionParams
+				test="$environment.MY_ENV_VAR"
+			/>
+		</Procedure>
+	</Task>
+	<ideTestParams
+		rdTaskID=""
+	/>
+</Process>
